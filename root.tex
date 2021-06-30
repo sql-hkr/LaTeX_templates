@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{ltjarticle}
+\usepackage{graphicx}
+\usepackage[american]{circuitikz}
+\usetikzlibrary{calc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{enumerate}
+\usepackage{here}
+
+\usepackage{geometry}
+\geometry{
+  left=15mm,
+  right=15mm,
+  top=15mm,
+  bottom=15mm,
+}
+
+% hyperlink
+\usepackage{hyperref}
+\hypersetup{
+  setpagesize=false,
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	colorlinks=true,
+	linkcolor=blue
+}
+
+% equation
+\numberwithin{equation}{section}
+\allowdisplaybreaks
+\everymath={\displaystyle}
+\sloppy
+
+\begin{document}
+\title{タイトル}
+\author{著者名}
+\maketitle
+
+\tableofcontents
+
+\twocolumn
+\input{sections/introduction.tex}
+\input{sections/theorem.tex}
+
+\cite{key}
+
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
